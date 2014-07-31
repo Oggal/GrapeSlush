@@ -39,7 +39,13 @@ public class NetworkManager : MonoBehaviour {
 		Debug.Log ("Player Spawned");
 
 		SpawnSpot SpawnPoint = Spawns [Random.Range (0, Spawns.Length)];
-		PhotonNetwork.Instantiate ("Player",SpawnPoint.transform.position, SpawnPoint.transform.rotation, 0);
+		GameObject MyPly =PhotonNetwork.Instantiate ("OldPlayer",SpawnPoint.transform.position, SpawnPoint.transform.rotation, 0);
 		StandbyCamera.enabled = false;
+
+		((MonoBehaviour)MyPly.GetComponent("FPS_Ctrl")).enabled = true;
+		//((MonoBehaviour)MyPly.GetComponent("FPSInputController")).enabled = true;
+		//((MonoBehaviour)MyPly.GetComponent("MouseLook")).enabled = true;
+		//((MonoBehaviour)MyPly.GetComponent("CharacterMotor")).enabled = true;
+		MyPly.transform.FindChild ("Main Camera").gameObject.SetActive( true);
 	}
 }
