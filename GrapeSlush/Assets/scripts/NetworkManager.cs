@@ -4,7 +4,7 @@ using System.Collections;
 public class NetworkManager : MonoBehaviour {
 
 	SpawnSpot[] Spawns;
-	public Camera StandbyCamera;
+	public GameObject StandbyCamera;
 	public string Version = "07312014-02.10_dev";
 	// Use this for initialization
 	void Start () {
@@ -39,13 +39,13 @@ public class NetworkManager : MonoBehaviour {
 		Debug.Log ("Player Spawned");
 
 		SpawnSpot SpawnPoint = Spawns [Random.Range (0, Spawns.Length)];
-		GameObject MyPly =PhotonNetwork.Instantiate ("OldPlayer",SpawnPoint.transform.position, SpawnPoint.transform.rotation, 0);
-		StandbyCamera.enabled = false;
+		GameObject MyPly =PhotonNetwork.Instantiate ("Player",SpawnPoint.transform.position, SpawnPoint.transform.rotation, 0);
+		StandbyCamera.SetActive ( false);
 
-		((MonoBehaviour)MyPly.GetComponent("FPS_Ctrl")).enabled = true;
-		//((MonoBehaviour)MyPly.GetComponent("FPSInputController")).enabled = true;
-		//((MonoBehaviour)MyPly.GetComponent("MouseLook")).enabled = true;
-		//((MonoBehaviour)MyPly.GetComponent("CharacterMotor")).enabled = true;
+		//((MonoBehaviour)MyPly.GetComponent("FPS_Ctrl")).enabled = true;
+		((MonoBehaviour)MyPly.GetComponent("FPSInputController")).enabled = true;
+		((MonoBehaviour)MyPly.GetComponent("MouseLook")).enabled = true;
+		((MonoBehaviour)MyPly.GetComponent("CharacterMotor")).enabled = true;
 		MyPly.transform.FindChild ("Main Camera").gameObject.SetActive( true);
 	}
 }

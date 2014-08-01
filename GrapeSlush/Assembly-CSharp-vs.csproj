@@ -81,8 +81,9 @@
      <Compile Include="Assets\Imports\Photon Unity Networking\UtilityScripts\TestDontDestroyOnLoad.cs" />
      <Compile Include="Assets\Imports\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
      <Compile Include="Assets\Imports\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\scripts\FPS_Ctrl.cs" />
+     <Compile Include="Assets\scripts\NetworkCharacter.cs" />
      <Compile Include="Assets\scripts\NetworkManager.cs" />
-     <Compile Include="Assets\scripts\Old\FPS_Ctrl.cs" />
      <Compile Include="Assets\scripts\SpawnSpot.cs" />
      <None Include="Assets\Imports\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Imports\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />

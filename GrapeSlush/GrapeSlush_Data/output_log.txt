@@ -15,7 +15,7 @@ Platform assembly: C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSl
 Loading C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.088 seconds
+- Completed reload, in  0.106 seconds
 desktop: 1920x1080 60Hz; virtual: 3520x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -33,7 +33,4 @@ Player Spawned
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Can't execute Disconnect() while not connected. Nothing changed. State: PeerCreated
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
+Platform assembly: C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\Boo.Lang.dll (this message is harmless)
