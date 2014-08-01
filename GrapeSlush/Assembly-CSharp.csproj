@@ -84,6 +84,7 @@
      <Compile Include="Assets\scripts\FPS_Ctrl.cs" />
      <Compile Include="Assets\scripts\NetworkCharacter.cs" />
      <Compile Include="Assets\scripts\NetworkManager.cs" />
+     <Compile Include="Assets\scripts\Oggal_was_Bored.cs" />
      <Compile Include="Assets\scripts\SpawnSpot.cs" />
      <None Include="Assets\Imports\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Imports\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />

@@ -15,12 +15,16 @@ Platform assembly: C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSl
 Loading C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.097 seconds
+- Completed reload, in  0.093 seconds
 desktop: 1920x1080 60Hz; virtual: 3520x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\System.dll (this message is harmless)
+Oggal was Bored is still in the game!!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
 Join Random Room Failed!
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
