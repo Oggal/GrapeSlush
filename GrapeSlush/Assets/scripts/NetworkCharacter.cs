@@ -20,7 +20,7 @@ public class NetworkCharacter : Photon.MonoBehaviour {
 			}
 	}
 
-	public void OnPhontonSerializeView(PhotonStream stream, PhotonMessageInfo info){
+	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info){
 
 		if (stream.isWriting) {
 			//Client's Player
