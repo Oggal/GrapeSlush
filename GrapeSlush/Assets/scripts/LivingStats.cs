@@ -6,6 +6,7 @@ public class LivingStats : MonoBehaviour {
 
 	public float maxHealth = 100.0f;
 	float CurentHealth;
+	float lastdeath = 0;
 	//public GameObject self;	//THIS MUST BE SET!!!
 	// Use this for initialization
 	void Start () {
@@ -14,7 +15,7 @@ public class LivingStats : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 	//
@@ -26,6 +27,7 @@ public class LivingStats : MonoBehaviour {
 	}
 
 	void Kill(){
-		Destroy (gameObject);
+		((ParticleSystem)gameObject.transform.FindChild ("Poof").gameObject.particleSystem).Emit (50);
+
 	}
 }

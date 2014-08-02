@@ -15,40 +15,7 @@ Platform assembly: C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSl
 Loading C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.089 seconds
+- Completed reload, in  0.093 seconds
 desktop: 1920x1080 60Hz; virtual: 3520x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\System.dll (this message is harmless)
-0
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-STUFF HAPPENS!
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-UnloadTime: 0.486053 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 206.
-Total: 1.106932 ms (FindLiveObjects: 0.023936 ms CreateObjectMapping: 0.015143 ms MarkObjects: 0.118216 ms  DeleteObjects: 0.080601 ms)
-
-Can't execute Disconnect() while not connected. Nothing changed. State: PeerCreated
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Joined Room
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Player Spawned
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Platform assembly: C:\Users\owner\Documents\GitHub\GrapeSlush\GrapeSlush\GrapeSlush_Data\Managed\Boo.Lang.dll (this message is harmless)
-Can't execute Disconnect() while not connected. Nothing changed. State: PeerCreated
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
