@@ -62,13 +62,13 @@
      <None Include="Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Imports\Photon Unity Networking\changelog.txt" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/owner/Documents/GitHub/GrapeSlush/GrapeSlush/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/john/Documents/GitHub/GrapeSlush/GrapeSlush/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/owner/Documents/GitHub/GrapeSlush/GrapeSlush/Assets/Imports/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/john/Documents/GitHub/GrapeSlush/GrapeSlush/Assets/Imports/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/owner/Documents/GitHub/GrapeSlush/GrapeSlush/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/john/Documents/GitHub/GrapeSlush/GrapeSlush/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>

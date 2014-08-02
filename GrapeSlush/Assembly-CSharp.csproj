@@ -96,7 +96,7 @@
      <None Include="Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Imports\Photon Unity Networking\changelog.txt" />
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/owner/Documents/GitHub/GrapeSlush/GrapeSlush/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/john/Documents/GitHub/GrapeSlush/GrapeSlush/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
