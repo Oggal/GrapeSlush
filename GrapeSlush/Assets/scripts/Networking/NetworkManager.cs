@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class NetworkManager : MonoBehaviour {
-
+	public bool offlineMode = false;
 	SpawnSpot[] Spawns;
 	public GameObject StandbyCamera;
 	public string Version = "07312014-02.10_dev";
@@ -14,7 +14,12 @@ public class NetworkManager : MonoBehaviour {
 	}
 
 	void Connect () {
+		if(offlineMode){
+			PhotonNetwork.offlineMode =true;
+			OnJoinedLobby();
+		}else{
 		PhotonNetwork.ConnectUsingSettings("GrapeSlush"+Version);
+		}
 	}
 
 	void OnGUI(){

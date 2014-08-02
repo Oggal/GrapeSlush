@@ -22,6 +22,7 @@ public class StartButton : MonoBehaviour {
 			transform.rotation = Quaternion.Euler(0,-89,0);
 		}
 		if (Input.GetKey (KeyCode.Mouse0)) {
+			Debug.Log("STUFF HAPPENS!");
 			OnClicked();
 				}
 	}
@@ -32,6 +33,7 @@ public class StartButton : MonoBehaviour {
 	}
 	void OnMouseExit(){
 		mouseIsInsideMe = false;
+		Debug.Log ("BABY COME BACK!");
 	}
 	void OnClicked(){
 		if (mouseIsInsideMe) {
