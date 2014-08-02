@@ -4,14 +4,14 @@ using System.Collections;
 public class BreakableProp : LivingStats {
 
 	[RPC]
-	public void TakeDamage(float f1){
+	override public void TakeDamage(float f1){
 		CurentHealth = CurentHealth-f1;
 		if (CurentHealth <= 0) {
 			Kill ();
 		}
 	}
 
-	void Kill(){
+	override protected void Kill(){
 	if(GetComponent<PhotonView>().instantiationId == 0){ 
 		Destroy(gameObject); 
 	}else{

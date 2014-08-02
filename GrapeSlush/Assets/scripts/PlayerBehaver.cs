@@ -4,14 +4,14 @@ using System.Collections;
 public class PlayerBehaver : LivingStats {
 
 	[RPC]
-	public void TakeDamage(float f1){
+	override public void TakeDamage(float f1){
 		CurentHealth = CurentHealth-f1;
 		if (CurentHealth <= 0) {
 			Kill ();
 		}
 	}
 
-	void Kill () {
+	override protected void Kill () {
 		((ParticleSystem)gameObject.transform.FindChild ("Poof").gameObject.particleSystem).Emit (50);
 	}
 }

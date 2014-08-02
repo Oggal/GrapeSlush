@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-public class LivingStats : MonoBehaviour {
+public abstract class LivingStats : MonoBehaviour {
 
 	public float maxHealth = 100.0f;
 	protected float CurentHealth;
@@ -20,14 +20,7 @@ public class LivingStats : MonoBehaviour {
 
 	//
 	[RPC]
-	public void TakeDamage(float f1){
-	//	CurentHealth = CurentHealth-f1;
-	//	if (CurentHealth <= 0) {
-	//		Kill ();
-		//}
-	}
+	abstract public void TakeDamage(float f1);
 
-	protected void Kill(){
-
-	}
+	abstract protected void Kill();
 }

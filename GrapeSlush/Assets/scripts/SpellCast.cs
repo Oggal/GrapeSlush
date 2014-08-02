@@ -59,7 +59,7 @@ public class SpellCast : MonoBehaviour {
 	Transform FindClosestHitInfo(Ray ray){
 		RaycastHit[] hits = Physics.RaycastAll (ray);
 
-		bool hasHit = false;
+
 		Transform closestHit = null;
 		float dis = 0;
 
