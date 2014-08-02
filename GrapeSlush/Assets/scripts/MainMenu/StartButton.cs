@@ -3,6 +3,7 @@ using System.Collections;
 
 public class StartButton : MonoBehaviour {
 	float deltaRot = 0;
+	bool mouseIsInsideMe = false;
 	public float speed = 10f;
 	// Use this for initialization
 	void Start () {
@@ -20,9 +21,22 @@ public class StartButton : MonoBehaviour {
 			deltaRot = -89f;
 			transform.rotation = Quaternion.Euler(0,-89,0);
 		}
+		if (Input.GetKey (KeyCode.Mouse0)) {
+			OnClicked();
+				}
 	}
 
-	void OnMouseOver(){
-		Debug.Log ("WAT?");
+	void OnMouseEnter(){
+		mouseIsInsideMe = true;
+		Debug.Log (Application.loadedLevel);
 	}
+	void OnMouseExit(){
+		mouseIsInsideMe = false;
+	}
+	void OnClicked(){
+		if (mouseIsInsideMe) {
+			Application.LoadLevel(1);
+		}
+	}
+
 }
