@@ -21,4 +21,8 @@ public class StartButton : MonoBehaviour {
 			transform.rotation = Quaternion.Euler(0,-89,0);
 		}
 	}
+
+	void OnMouseOver(){
+		Debug.Log ("WAT?");
+	}
 }
