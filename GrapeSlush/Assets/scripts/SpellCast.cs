@@ -3,11 +3,14 @@ using System.Collections;
 
 public class SpellCast : MonoBehaviour {
 
-
+	public float damage = 20;
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetButtonDown ("Fire1")) {
 			Fire();
+		}
+		if (Input.GetButtonDown ("Fire2")) {
+			AltFire();
 		}
 	}
 
@@ -20,11 +23,35 @@ public class SpellCast : MonoBehaviour {
 
 			LivingStats h = hitTransform.GetComponent<LivingStats>();
 
-			if(h==null){ Debug.Log("Nope...");}
+			if(h==null){ 
+			//TODO: shoot effects for other non-damage
+			}
 
 			if(h != null){
 				Debug.Log("Yes???");
-				h.TakeDamage(2000);
+				//h.TakeDamage(2000);
+				h.GetComponent<PhotonView>().RPC ("TakeDamage",PhotonTargets.All,damage);
+			}
+		}
+	}
+
+	void AltFire(){
+		Ray ray = new Ray (Camera.main.transform.position, Camera.main.transform.forward);
+		
+		Transform hitTransform = FindClosestHitInfo (ray);
+		if (hitTransform != null) {
+			Debug.Log("HIT!");
+			
+			LivingStats h = hitTransform.GetComponent<LivingStats>();
+			
+			if(h==null){ 
+				//TODO: shoot effects for other non-damage
+			}
+			
+			if(h != null){
+				Debug.Log("Yes???");
+				//h.TakeDamage(2000);
+				h.GetComponent<PhotonView>().RPC ("TakeDamage",PhotonTargets.All,damage);
 			}
 		}
 	}

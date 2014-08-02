@@ -1,11 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Networking\NetworkManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\LivingStats.cs">
     <Files>
-      <File FileName="Assets\scripts\Networking\NetworkManager.cs" Line="56" Column="2" />
-      <File FileName="Assets\scripts\LivingStats.cs" Line="30" Column="94" />
-      <File FileName="Assets\scripts\Networking\NetworkManager.cs" Line="17" Column="25" />
-      <File FileName="Assets\scripts\MainMenu\StartButton.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\LivingStats.cs" Line="25" Column="4" />
+      <File FileName="Assets\scripts\SpellCast.cs" Line="38" Column="9" />
+      <File FileName="Assets\scripts\Networking\NetworkManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\BreakableProp.cs" Line="15" Column="2" />
+      <File FileName="Assets\scripts\MineBehavior.cs" Line="9" Column="7" />
+      <File FileName="Assets\scripts\PlayerBehaver.cs" Line="8" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
