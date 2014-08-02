@@ -14,11 +14,11 @@ public class NetworkManager : MonoBehaviour {
 	}
 
 	void Connect () {
-		if(offlineMode){
+		if(offlineMode == true){
 			PhotonNetwork.offlineMode =true;
 			OnJoinedLobby();
 		}else{
-		PhotonNetwork.ConnectUsingSettings("GrapeSlush"+Version);
+		PhotonNetwork.ConnectUsingSettings("GrapeSlush");
 		}
 	}
 
