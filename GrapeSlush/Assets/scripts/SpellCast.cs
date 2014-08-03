@@ -16,17 +16,19 @@ public class SpellCast : MonoBehaviour {
 
 	void Fire(){
 		Ray ray = new Ray (Camera.main.transform.position, Camera.main.transform.forward);
-		Vector3 vec;
-		Transform hitTransform = FindClosestHitInfo (ray, out vec);
+		Vector3 hitpos;
+		Transform hitTransform = FindClosestHitInfo (ray,out hitpos);
 		if (hitTransform != null) {
 			Debug.Log("HIT!");
-
-			LivingStats h = hitTransform.GetComponent<LivingStats>();
-
-			if(h==null){ 
 			
+			LivingStats h = hitTransform.GetComponent<LivingStats>();
+			
+			if(hitTransform!=null){ 
+				GameObject orb = PhotonNetwork.Instantiate("Spell Orb",gameObject.transform.position,gameObject.transform.rotation,0);
+				Debug.DrawLine(gameObject.transform.position,hitpos,Color.cyan,20.0f);
+				orb.GetComponent<SpellProjecttile>().HitPos = hitpos;
 			}
-
+			
 			if(h != null){
 				Debug.Log("Yes???");
 				//h.TakeDamage(2000);
@@ -76,4 +78,9 @@ public class SpellCast : MonoBehaviour {
 		}
 		return  closestHit;
 	}
+
+	void OnGUI(){
+		GUI.Label (new Rect (10,Screen.height-80,200,40), "Health: "+gameObject.GetComponent<LivingStats>().getHealth());
+		GUI.Label (new Rect (10,40,100,20), GUI.tooltip);
+		}
 }

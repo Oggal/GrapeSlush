@@ -23,4 +23,8 @@ public abstract class LivingStats : MonoBehaviour {
 	abstract public void TakeDamage(float f1);
 
 	abstract protected void Kill();
+
+	public int getHealth(){
+		return Mathf.FloorToInt (CurentHealth);
+	}
 }

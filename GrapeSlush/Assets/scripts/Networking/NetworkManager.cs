@@ -6,6 +6,8 @@ public class NetworkManager : MonoBehaviour {
 	SpawnSpot[] Spawns;
 	public GameObject StandbyCamera;
 	public string Version = "07312014-02.10_dev";
+	public float respawnTime = 0.0f;
+
 	// Use this for initialization
 	void Start () {
 		Spawns = GameObject.FindObjectsOfType<SpawnSpot>();
@@ -14,12 +16,22 @@ public class NetworkManager : MonoBehaviour {
 
 	}
 
+	void Update(){
+		if (respawnTime > 0) {
+			StandbyCamera.SetActive(true);
+			respawnTime -= Time.deltaTime;
+			if (respawnTime <= 0) {
+				SpawnClientPlayer ();
+			}
+		}
+	}
+
 	void Connect () {
 		if(offlineMode == true){
 			PhotonNetwork.offlineMode =true;
 			OnJoinedLobby();
 		}else{
-		PhotonNetwork.ConnectUsingSettings("GrapeSlush");
+		PhotonNetwork.ConnectUsingSettings("GrapeSlush"+Version);
 		}
 	}
 
