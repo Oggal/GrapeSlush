@@ -16,15 +16,15 @@ public class SpellCast : MonoBehaviour {
 
 	void Fire(){
 		Ray ray = new Ray (Camera.main.transform.position, Camera.main.transform.forward);
-
-		Transform hitTransform = FindClosestHitInfo (ray);
+		Vector3 vec;
+		Transform hitTransform = FindClosestHitInfo (ray, out vec);
 		if (hitTransform != null) {
 			Debug.Log("HIT!");
 
 			LivingStats h = hitTransform.GetComponent<LivingStats>();
 
 			if(h==null){ 
-			//TODO: shoot effects for other non-damage
+			
 			}
 
 			if(h != null){
@@ -37,15 +37,17 @@ public class SpellCast : MonoBehaviour {
 
 	void AltFire(){
 		Ray ray = new Ray (Camera.main.transform.position, Camera.main.transform.forward);
-		
-		Transform hitTransform = FindClosestHitInfo (ray);
+		Vector3 hitpos;
+		Transform hitTransform = FindClosestHitInfo (ray,out hitpos);
 		if (hitTransform != null) {
 			Debug.Log("HIT!");
 			
 			LivingStats h = hitTransform.GetComponent<LivingStats>();
 			
-			if(h==null){ 
-				//TODO: shoot effects for other non-damage
+			if(hitTransform!=null){ 
+				GameObject orb = PhotonNetwork.Instantiate("Spell Orb",gameObject.transform.position,gameObject.transform.rotation,0);
+				Debug.DrawLine(gameObject.transform.position,hitpos,Color.cyan,20.0f);
+				orb.GetComponent<SpellProjecttile>().HitPos = hitpos;
 			}
 			
 			if(h != null){
@@ -56,20 +58,20 @@ public class SpellCast : MonoBehaviour {
 		}
 	}
 
-	Transform FindClosestHitInfo(Ray ray){
+	Transform FindClosestHitInfo(Ray ray,out Vector3 vec){
 		RaycastHit[] hits = Physics.RaycastAll (ray);
 
 
 		Transform closestHit = null;
 		float dis = 0;
-
+		vec = Vector3.zero;
 
 		foreach (RaycastHit hit in hits) {
 
 			if(hit.transform != this.transform &&( closestHit == null || hit.distance < dis)){
 				closestHit =  hit.transform;
 				dis = hit.distance;
-
+				vec = hit.point;
 			}
 		}
 		return  closestHit;

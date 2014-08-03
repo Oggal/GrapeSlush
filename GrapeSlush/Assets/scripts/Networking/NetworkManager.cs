@@ -10,6 +10,7 @@ public class NetworkManager : MonoBehaviour {
 	void Start () {
 		Spawns = GameObject.FindObjectsOfType<SpawnSpot>();
 		Connect ();
+		Screen.lockCursor= true;
 
 	}
 
